@@ -1,0 +1,14 @@
+version: '3.5'
+
+services:
+  mysql-spmi:
+    container_name: "mysql-spmi"
+    image: mysql:latest
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_DATABASE="db_spmi"
+      - MYSQL_USER="user_spmi"
+      - MYSQL_PASSWORD="rahasia"
+      - MYSQL_ROOT_PASSWORD
